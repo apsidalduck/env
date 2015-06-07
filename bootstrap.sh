@@ -5,9 +5,8 @@ git config --global user.email "apsidalduck@users.noreply.github.com"
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 git clone ssh://git@github.com/apsidalduck/env.git
 cp -r /vagrant/* env/
-chmod u+x env/bootstrap2.sh
 cd env
-./bootstrap2.sh
+git config --global core.excludesfile ./.gitignore
 git add -A
-git commit
+git commit -m 'auto commit'
 git push origin master
