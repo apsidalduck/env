@@ -1,5 +1,5 @@
 Vagrant.configure(2) do |config|
-  config.vm.box = "hashicorp/precise32"
+  config.vm.box = "ubuntu/trusty64"
 
   config.ssh.forward_agent = true
 
@@ -7,6 +7,7 @@ Vagrant.configure(2) do |config|
 
 apt-get update
 apt-get install -y git
+wget -qO- https://get.docker.com/ | sh
 
 SCRIPT
 
