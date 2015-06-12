@@ -8,10 +8,14 @@ Vagrant.configure(2) do |config|
 apt-get update
 apt-get install -y git
 wget -qO- https://get.docker.com/ | sh
+gpasswd -a vagrant docker
+service docker restart
 
 SCRIPT
 
   config.vm.provision :shell, privileged:false, inline: <<SCRIPT
+
+newgrp docker
 
 git config --global user.name "Vicram Kotecha"
 git config --global user.email "apsidalduck@users.noreply.github.com"
