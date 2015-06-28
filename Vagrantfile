@@ -3,6 +3,10 @@ Vagrant.configure(2) do |config|
 
   config.ssh.forward_agent = true
 
+  config.vm.network "forwarded_port", guest: 21, host: 2121
+
+  config.vm.hostname = "ftpserver"
+
   config.vm.provision :shell, inline: <<SCRIPT
 
 apt-get update
@@ -27,6 +31,11 @@ git config --global core.excludesfile ./.gitignore
 git add -A
 git commit -m 'auto commit'
 git push origin master
+
+cd /vagrant
+
+docker build -t vic-ftp .
+docker run -v /vagrant:/vagrant -p 21:21 --name vic-ftpd -d vic-ftp
 
 SCRIPT
 

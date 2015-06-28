@@ -1,0 +1,180 @@
+    1  docker run hello-world
+    2  cat /etc/*-release
+    3  pwd
+    4  ls
+    5  git clone https://github.com/stilliard/docker-pure-ftpd.git
+    6  cd docker-pure-ftpd/
+    7  ls
+    8  emacs Makefile
+    9  vi Makefile
+   10  make build
+   11  make run
+   12  docker run -p 21:21 --name ftpd_server stilliard/pure-ftpd
+   13  ps
+   14  ps auwwx
+   15  ftp -p localhost 21
+   16  pure-pw useradd vic -u ftpuser -d /home/ftpusers/vic
+   17  docker exec -it ftpd_server /bin/bash
+   18  ftp -p localhost 21
+   19  docker exec -it ftpd_server /bin/bash
+   20  ftp -p localhost 21
+   21  pwd
+   22  ls
+   23  docker ps
+   24  docker stop
+   25  docker stop --help
+   26  docker stop 8239977e5081
+   27  docker ps
+   28  docker run -v /vagrant:/vagrant -p 21:21 --name ftpd_server stilliard/pure-ftpd
+   29  docker rm 8239977e5081
+   30  docker run -v /vagrant:/vagrant -p 21:21 --name ftpd_server stilliard/pure-ftpd
+   31  docker ps
+   32  docker stop ftpd_server
+   33  docker rm ftpd_server
+   34  docker run -v /vagrant:/vagrant -p 21:21 --name ftpd_server stilliard/pure-ftpd -d
+   35  docker run -d -v /vagrant:/vagrant -p 21:21 --name ftpd_server stilliard/pure-ftpd 
+   36  docker stop ftpd_server
+   37  docker rm ftpd_server
+   38  docker run -d -v /vagrant:/vagrant -p 21:21 --name ftpd_server stilliard/pure-ftpd 
+   39  docker ps
+   40  docker exec -it ftpd_server /bin/bash
+   41  ftp -p localhost 21
+   42  docker exec -it ftpd_server /bin/bash
+   43  ls
+   44  docker ps
+   45  ftp -p localhost 21
+   46  pwd
+   47  ls
+   48  cd /vagrant
+   49  sl
+   50  ls
+   51  cd /vagrant
+   52  docker stop ftpd_server
+   53  docker run --name ftpd_server_vic
+   54  docker build
+   55  docker build .
+   56  cd /vagrant/
+   57  docker build .
+   58  docker rm f53492a8606f
+   59  docker rm .
+   60  ls
+   61  docker build -t vic-ftp .
+   62  docker run
+   63  docker run .
+   64  docker run vic-ftp
+   65  docker ps
+   66  docker stop
+   67  docker stop 
+   68  docker run vic-ftp
+   69  docker ps
+   70  docker stop 2102a893055a
+   71  docker stop 3d4e8b4e3f41
+   72  docker run vic-ftp -d
+   73  docker run -d vic-ftp
+   74  docker stop 3b82324202456b94794e9e43689676d6d367a5feb09dea918feaa108e705ca3d
+   75  docker run -name vic-ftpd -d vic-ftp
+   76  docker ps
+   77  docker exec -it vic-ftpd /bin/bash
+   78  docker stop vic-ftpd
+   79  histoyr
+   80  history
+   81  docker run -v /vagrant:/vagrant -name vic-ftpd -d vic-ftp
+   82  docker rm vic-ftpd
+   83  docker run -v /vagrant:/vagrant -name vic-ftpd -d vic-ftp
+   84  docker rm vic-ftpd
+   85  docker stop vic-ftpd
+   86  docker rm vic-ftpd
+   87  docker run -v /vagrant:/vagrant --name vic-ftpd -d vic-ftp
+   88  docker exec -it vic-ftpd /bin/bash
+   89  vi /vagrant/ExpectPwd.sh
+   90  docker exec -it vic-ftpd /bin/bash
+   91  vi /vagrant/ExpectPwd.sh
+   92  docker exec -it vic-ftpd /bin/bash
+   93  ftp localhost
+   94  ftp -p 21 localhost
+   95  vagrant ps
+   96  docker ps
+   97  history | grep ftp
+   98  ftp -p localhost 21
+   99  docker exec -it vic-ftpd /bin/bash
+  100  docker stop vic-ftpd
+  101  docker rm vic-ftpd
+  102  docker build -t vic-ftp .
+  103  docker run -v /vagrant:/vagrant --name vic-ftpd -d vic-ftp
+  104  docker exec -it vic-ftpd /bin/bash
+  105  ftp localhost 21 
+  106  docker ps
+  107  docker stop vic-ftpd
+  108  pwd
+  109  ls
+  110  cd /vagrant
+  111  docker build -t vic-ftp .
+  112  vi Dockerfile
+  113  docker build -t vic-ftp .
+  114  vi Dockerfile
+  115  docker build -t vic-ftp .
+  116  vi Dockerfile
+  117  docker build -t vic-ftp .
+  118  pwd
+  119  cd /va
+  120  cd /vagrant/
+  121  docker build -t vic-ftp .
+  122  docker build -t vic-ftp /vagrant/
+  123  docker build -t vic-ftp .
+  124  docker build -t vic-ftp /vagrant/
+  125  pwd
+  126  docker build -t vic-ftp /vagrant/
+  127  history
+  128  docker build -t vic-ftp /vagrant/
+  129  history
+  130  ftp localhost 21
+  131  ls
+  132  cd /vagrant
+  133  ls
+  134  docker ps
+  135  history
+  136  docker run -v /vagrant:/vagrant --name vic-ftpd -d vic-ftp
+  137  docker exec -it vic-ftpd /bin/bash
+  138  docker stop vic-ftpd
+  139  docker rm vic-ftpd
+  140  docker exec -it vic-ftpd /bin/bash
+  141  docker run -v /vagrant:/vagrant --name vic-ftpd -d vic-ftp
+  142  docker exec -it vic-ftpd /bin/bash
+  143  ftp localhost 21
+  144  docker exec -it -d vic-ftpd /bin/bash
+  145  ftp localhost 21
+  146  docker ps
+  147  docker exec -it vic-ftpd /bin/bash
+  148  ftp localhost 21
+  149  ls
+  150  cat Do`
+  151  cat Dockerfile
+  152  docker exec -it vic-ftpd /bin/bash
+  153  ftp localhost 21
+  154  docker exec -it vic-ftpd /bin/bash
+  155  ftp -p localhost 21
+  156  ftp localhost 21
+  157  docker exec -it vic-ftpd /bin/bash
+  158  ftp localhost 21
+  159  docker exec -it vic-ftpd /bin/bash
+  160  docker stop vic-ftpd
+  161  history
+  162  docker run -v /vagrant:/vagrant -p 21:21 --name ftpd_server stilliard/pure-ftpd
+  163  docker stop ftpd_server
+  164  docker run -v /vagrant:/vagrant -p 21:21 --name ftpd_server stilliard/pure-ftpd
+  165  docker rm ftpd_server
+  166  docker run -v /vagrant:/vagrant -p 21:21 --name ftpd_server stilliard/pure-ftpd
+  167  ftp localhost 21
+  168  docker stop ftpd_server
+  169  docker rm ftpd_server
+  170  docker run -v /vagrant:/vagrant -p 21:21 --name vic-ftpd -d vic-ftp
+  171  docker stop vic-ftpd
+  172  docker rm vic-ftpd
+  173  docker run -v /vagrant:/vagrant -p 21:21 --name vic-ftpd -d vic-ftp
+  174  ftp localhost 21
+  175  docker exec -it vic-ftpd /bin/bash
+  176  cat Do
+  177  cat /vagrant/Dockerfile
+  178  ftp localhost 21
+  179  ftp -p localhost 21
+  180  history > /vagrant/history.txt
